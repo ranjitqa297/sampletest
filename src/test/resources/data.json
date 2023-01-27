@@ -1,0 +1,16 @@
+{
+  "WEB": [
+    {
+      "homeTitle": "The New York Times - Breaking News, US News, World News and Videos",
+      "healthTitle": "Health - The New York Times"
+    }
+  ],
+  "API": [
+    {
+      "period": "7",
+      "shareType": "facebook",
+      "date": "2023-01-02",
+      "section": "business"
+    }
+  ]
+}
