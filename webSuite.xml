@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="API Testing Suite">
+    <test name="UI Tests" parallel="methods" thread-count="5">
+        <classes>
+            <class name="org.gd.automation.test.ui.HomePageTest"/>
+        </classes>
+    </test>
+</suite>

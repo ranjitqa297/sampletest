@@ -3,12 +3,16 @@ package org.gd.automation.core.ui;
 import lombok.extern.slf4j.Slf4j;
 import org.gd.automation.core.util.JsonHelper;
 import org.gd.automation.core.util.TestType;
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+
+import java.time.Duration;
+
 @Slf4j
 public class BaseUI implements TestType {
 
@@ -21,6 +25,7 @@ public class BaseUI implements TestType {
     public void setUp() {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--start-maximized");
+        chromeOptions.setPageLoadStrategy(PageLoadStrategy.NONE);
         driver.set(new ChromeDriver(chromeOptions));
         jsonHelper.setTestType(testType());
         log.info("Driver has started ...... ");

@@ -40,6 +40,7 @@ public class HomePage {
 
     public void validatePage(String pageTitle) {
         try {
+            uiAction.delay(1);
             Assert.assertEquals(uiAction.getPageTitle(), pageTitle);
             log.info("Passed: expected page title [ " + pageTitle + " ] is matched actual page title [ " + uiAction.getPageTitle() + " ]");
         } catch (AssertionError e) {
