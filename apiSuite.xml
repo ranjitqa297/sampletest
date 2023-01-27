@@ -2,7 +2,7 @@
 <suite name="API Testing Suite">
     <test name="API Tests" parallel="methods" thread-count="5">
         <classes>
-            <class name="org.gd.automation.test.api.ApiTest"/>
+            <class name="org.gd.automation.test.api.APITest"/>
         </classes>
     </test>
 </suite>

@@ -2,7 +2,7 @@
 <suite name="API Testing Suite">
     <test name="UI Tests" parallel="methods" thread-count="5">
         <classes>
-            <class name="org.gd.automation.test.ui.HomePageTest"/>
+            <class name="org.gd.automation.test.ui.UITest"/>
         </classes>
     </test>
 </suite>

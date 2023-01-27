@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import static org.gd.automation.core.util.JsonHelper.testData;
 
-public class HomePageTest extends BaseUI {
+public class UITest extends BaseUI {
 
     @Test(enabled = true)
     public void validateHealthPage() throws JsonProcessingException {

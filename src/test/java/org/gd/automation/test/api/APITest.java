@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import java.text.ParseException;
 
 @Slf4j()
-public class ApiTest {
+public class APITest {
 
     MostPopular mostPopular;
     TopStories topStories;
